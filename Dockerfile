@@ -7,3 +7,4 @@ RUN rm -R .git
 RUN ln -s dashboard.php index.php
 RUN sed -i '/systemInfo/s/^<?php /<?php \/\//g' dashboard.php
 RUN sed -i '/remoteControl/s/^<?php /<?php \/\//g' dashboard.php
+RUN sed -i '/MMDVMTxingInfoAjax/s/^<?php /<?php \/\//g' dashboard.php
